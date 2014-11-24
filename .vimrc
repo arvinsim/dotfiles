@@ -1,17 +1,29 @@
-set tabstop=4	"number of visual spaces per TAB
+" Basics
+set nocompatible " explicitly get out of vi-compatible mode
+syntax on " syntax highlighting on
 
-set softtabstop=4	"number of spaces in tab when editing
-set expandtab	"tabs are spaces
+" General
+filetype plugin indent on " load filetype plugins/indent settings
+set backspace=indent,eol,start " make backspace a more flexible
+set clipboard+=unnamed " share windows clipboard
 
+" VIM UI
+set incsearch   "search as characters are entered
+set laststatus=2 "always show the status line
 set number	"show line numbers
+set hlsearch    "highlight matches
 set showcmd "show command in bottom bar
-set cursorline	"highlight current line
 set showmatch   "highlight matchin [{()}]
 
+" Text Formatting/Layout
+set tabstop=4	"number of visual spaces per TAB
+set softtabstop=4	"number of spaces in tab when editing
 set autoindent
+set shiftwidth=4    " auto-indent amount when using cindent, >>, << and stuff like that
+set expandtab	"tabs are spaces
 
-set incsearch   "search as characters are entered
-set hlsearch    "highlight matches
+set cursorline	"highlight current line
+
 
 set backspace=indent,eol,start	" make backspace work like most other apps 
 
@@ -26,11 +38,6 @@ filetype off
 execute pathogen#infect()
 execute pathogen#helptags()
 
-filetype plugin indent on
-syntax on
-
-" Airline
-set laststatus=2
 
 " NERDTree
 let NERDTreeShowHidden=1 " Show hidden files
