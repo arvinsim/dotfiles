@@ -1,5 +1,5 @@
 " Startup
-    let s:running_windows = has("win16") || has("win32") || has("win64")
+let s:running_windows = has("win16") || has("win32") || has("win64")
 " ===============Themes========================= 
 
 " BusyBee

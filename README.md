@@ -12,3 +12,4 @@ This where I store my rc files for vim, bash, zsh, etc.
 - [Pathogen](https://github.com/tpope/vim-pathogen)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [surround.vim](https://github.com/tpope/vim-surround)
+- [CtrlP](kien.github.io/ctrlp.vim)

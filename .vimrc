@@ -1,3 +1,6 @@
+" Variables
+let s:running_windows = has("win16") || has("win32") || has("win64")
+
 " Basics
 set nocompatible " explicitly get out of vi-compatible mode
 syntax on " syntax highlighting on
@@ -42,4 +45,10 @@ execute pathogen#helptags()
 " NERDTree
 let NERDTreeShowHidden=1 " Show hidden files
 let NERDTreeHighlightCursorline=1 " Highlight the cursor
+
+" Ctrlp
+if s:running_windows
+else
+    set runtimepath^=~/.vim/bundle/ctrlp.vim
+endif
 
