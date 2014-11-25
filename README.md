@@ -13,3 +13,5 @@ This where I store my rc files for vim, bash, zsh, etc.
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [surround.vim](https://github.com/tpope/vim-surround)
 - [CtrlP](kien.github.io/ctrlp.vim)
+- [vim-move](https://github.com/matze/vim-move)
+- [vim-hardtime](https://github.com/takac/vim-hardtime)

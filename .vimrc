@@ -1,5 +1,6 @@
 " Variables
 let s:running_windows = has("win16") || has("win32") || has("win64")
+let os=substitute(system('uname'), '\n', '', '')
 
 " Basics
 set nocompatible " explicitly get out of vi-compatible mode
@@ -9,7 +10,9 @@ syntax on " syntax highlighting on
 filetype plugin indent on " load filetype plugins/indent settings
 set backspace=indent,eol,start " make backspace more flexible
 set clipboard+=unnamed " share windows clipboard
+set ignorecase  " ignore case when searching
 set smartcase   " only apply case sensitive search if at least one of the letters in the pattern is uppercase
+set wrapscan    " wrap around
 set nobackup    " disable backup files    
 set noswapfile  " disable swap files
 
@@ -17,6 +20,7 @@ set noswapfile  " disable swap files
 set incsearch   "search as characters are entered
 set laststatus=2 "always show the status line
 set number	"show line numbers
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR> " Press Space to turn off highlighting and clear any message already displayed
 set hlsearch    "highlight matches
 set showcmd "show command in bottom bar
 set showmatch   "highlight matching [{()}]
@@ -43,17 +47,23 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 " NERDTree
-let NERDTreeShowHidden=1 " Show hidden files
+let NERDTreeChDirMode=2   " change CWD to wherever the tree root is changed
 let NERDTreeHighlightCursorline=1 " Highlight the cursor
-let g:NERDTreeChDirMode=2   " change CWD to whenere the tree root is changed
+let NERDTreeMouseMode=2 " Single click to open directory, double click to open file
+let NERDTreeShowHidden=1 " Show hidden files
 
 " Ctrlp
 let g:ctrlp_show_hidden = 1
 "begin finding a root from the current working directory outside of CtrlP
 " instead of from the directory of the current file (default)
 let g:ctrlp_working_path_mode='rw' 
-if s:running_windows
-else
+
+if os == 'Linux'
+elseif os == 'windows32'
+elseif os == 'Darwin'
     set runtimepath^=~/.vim/bundle/ctrlp.vim
 endif
+
+" vim-hardtime
+let g:hardtime_default_on=1
 
