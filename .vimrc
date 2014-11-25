@@ -45,8 +45,13 @@ execute pathogen#helptags()
 " NERDTree
 let NERDTreeShowHidden=1 " Show hidden files
 let NERDTreeHighlightCursorline=1 " Highlight the cursor
+let g:NERDTreeChDirMode=2   " change CWD to whenere the tree root is changed
 
 " Ctrlp
+let g:ctrlp_show_hidden = 1
+"begin finding a root from the current working directory outside of CtrlP
+" instead of from the directory of the current file (default)
+let g:ctrlp_working_path_mode='rw' 
 if s:running_windows
 else
     set runtimepath^=~/.vim/bundle/ctrlp.vim

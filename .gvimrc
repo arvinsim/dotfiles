@@ -13,7 +13,7 @@ colorscheme solarized
 if s:running_windows
     set guifont=Consolas:h11
 else
-    set guifont=Monaco:h14
+    set guifont=Monaco:h12
 endif
 
 
