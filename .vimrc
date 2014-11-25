@@ -4,8 +4,11 @@ syntax on " syntax highlighting on
 
 " General
 filetype plugin indent on " load filetype plugins/indent settings
-set backspace=indent,eol,start " make backspace a more flexible
+set backspace=indent,eol,start " make backspace more flexible
 set clipboard+=unnamed " share windows clipboard
+set smartcase   " only apply case sensitive search if at least one of the letters in the pattern is uppercase
+set nobackup    " disable backup files    
+set noswapfile  " disable swap files
 
 " VIM UI
 set incsearch   "search as characters are entered
@@ -13,7 +16,10 @@ set laststatus=2 "always show the status line
 set number	"show line numbers
 set hlsearch    "highlight matches
 set showcmd "show command in bottom bar
-set showmatch   "highlight matchin [{()}]
+set showmatch   "highlight matching [{()}]
+set cursorline	"highlight current line
+set splitbelow  "place vertical splits to the bottom of the current pane
+set splitright  "place vertical splits to the right of the current pane
 
 " Text Formatting/Layout
 set tabstop=4	"number of visual spaces per TAB
@@ -21,11 +27,6 @@ set softtabstop=4	"number of spaces in tab when editing
 set autoindent
 set shiftwidth=4    " auto-indent amount when using cindent, >>, << and stuff like that
 set expandtab	"tabs are spaces
-
-set cursorline	"highlight current line
-
-
-set backspace=indent,eol,start	" make backspace work like most other apps 
 
 " move vertically by visual line
 nnoremap j gj
@@ -37,7 +38,6 @@ filetype off
 
 execute pathogen#infect()
 execute pathogen#helptags()
-
 
 " NERDTree
 let NERDTreeShowHidden=1 " Show hidden files
