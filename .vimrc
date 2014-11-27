@@ -55,6 +55,7 @@ let NERDTreeChDirMode=2   " change CWD to wherever the tree root is changed
 let NERDTreeHighlightCursorline=1 " Highlight the cursor
 let NERDTreeMouseMode=2 " Single click to open directory, double click to open file
 let NERDTreeShowHidden=1 " Show hidden files
+let NERDTreeShowLineNumbers=1 " Display line numbers in tree window
 
 " Ctrlp
 let g:ctrlp_show_hidden = 1

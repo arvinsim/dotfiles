@@ -15,3 +15,4 @@ This where I store my rc files for vim, bash, zsh, etc.
 - [CtrlP](kien.github.io/ctrlp.vim)
 - [vim-move](https://github.com/matze/vim-move)
 - [vim-hardtime](https://github.com/takac/vim-hardtime)
+- [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
