@@ -71,6 +71,8 @@ endif
 
 " vim-hardtime
 let g:hardtime_default_on=1
+" lets you press n times before hardtime ignores subsequent keypress
+let g:hardtime_maxcount=2  
 
 " syntastic
 let g:syntastic_check_on_open=1
