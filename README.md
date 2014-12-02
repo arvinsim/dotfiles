@@ -16,3 +16,4 @@ This where I store my rc files for vim, bash, zsh, etc.
 - [vim-move](https://github.com/matze/vim-move)
 - [vim-hardtime](https://github.com/takac/vim-hardtime)
 - [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
+- [vim-javascript](https://github.com/pangloss/vim-javascript)
