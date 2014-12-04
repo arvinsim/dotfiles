@@ -75,9 +75,10 @@ let g:hardtime_default_on=1
 let g:hardtime_maxcount=2  
 
 " syntastic
-" let g:syntastic_check_on_open=1
-" let g:syntastic_enable_signs=1
-" let g:syntastic_javascript_checkers=["gjslint"]
+let g:syntastic_check_on_wq=0
+let g:syntastic_enable_highlighting=1
+let g:syntastic_enable_signs=1
+let g:syntastic_javascript_checkers=["gjslint"]
 
 " vim-javascript
 let javascript_enable_domhtmlcss=1
