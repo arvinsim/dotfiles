@@ -43,6 +43,9 @@ set smarttab   "helps with backspacing because of expandtab
 nnoremap j gj
 nnoremap k gk
 
+" Set encoding to UTF 8
+scriptencoding utf-8
+set encoding=utf-8
 "===============PLUGINS================
 "Pathogen
 filetype off
@@ -56,6 +59,7 @@ let NERDTreeHighlightCursorline=1 " Highlight the cursor
 let NERDTreeMouseMode=2 " Single click to open directory, double click to open file
 let NERDTreeShowHidden=1 " Show hidden files
 let NERDTreeShowLineNumbers=1 " Display line numbers in tree window
+let g:NERDTreeDirArrows=1 " Use arrows for directory
 
 " Ctrlp
 let g:ctrlp_show_hidden = 1

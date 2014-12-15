@@ -11,7 +11,7 @@ set background=dark
 colorscheme solarized
 
 if s:running_windows
-    set guifont=Consolas:h11
+    set guifont=Consolas:h11:cDEFAULT
 else
     set guifont=Monaco:h12
 endif
