@@ -11,9 +11,10 @@ This where I store my rc files for vim, bash, zsh, etc.
 ### Plugins
 - [Pathogen](https://github.com/tpope/vim-pathogen)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
+- [vim-airline](https://github.com/bling/vim-airline)
 - [surround.vim](https://github.com/tpope/vim-surround)
 - [CtrlP](kien.github.io/ctrlp.vim)
-- [vim-move](https://github.com/matze/vim-move)
 - [vim-hardtime](https://github.com/takac/vim-hardtime)
 - [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
 - [vim-javascript](https://github.com/pangloss/vim-javascript)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
