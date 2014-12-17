@@ -1,5 +1,4 @@
 " Variables
-let s:running_windows = has("win16") || has("win32") || has("win64")
 let os=substitute(system('uname'), '\n', '', '')
 
 " Basics
@@ -68,6 +67,7 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode='rw' 
 
 if os == 'Linux'
+    set runtimepath^=~/.vim/bundle/ctrlp.vim
 elseif os == 'windows32'
 elseif os == 'Darwin'
     set runtimepath^=~/.vim/bundle/ctrlp.vim

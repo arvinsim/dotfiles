@@ -1,5 +1,5 @@
 " Startup
-let s:running_windows = has("win16") || has("win32") || has("win64")
+let os=substitute(system('uname'), '\n', '', '')
 " ===============Themes========================= 
 
 " BusyBee
@@ -15,11 +15,12 @@ set enc=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
 
-if s:running_windows
+if os == 'Linux'
+    set guifont=Monospace\ 10
+elseif os == 'windows32'
     set guifont=Consolas:h11:cDEFAULT
-else
+elseif os == 'Darwin'
     set guifont=Monaco:h12
 endif
-
 
 
