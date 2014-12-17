@@ -10,10 +10,15 @@
         "amplify": true
     },
     "rules": {
-        "no-comma-dangle": 2,
-        "no-cond-assign": 2,
-        "no-shadow": 2,
+        "valid-jsdoc": 2,
+        "no-else-return": 2,
+        "no-eq-null": 2,
+        "no-floating-decimal": 2,
+        "no-self-compare": 2,
+        "radix": 2,
         "strict": 0,
+        "no-undefined": 2,
+        "func-names": 2,
         "quotes": [1, "double", "avoid-escape"],
         "no-irregular-whitespace":  0
     }
