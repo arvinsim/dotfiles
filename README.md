@@ -18,3 +18,4 @@ This where I store my rc files for vim, bash, zsh, etc.
 - [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
 - [vim-javascript](https://github.com/pangloss/vim-javascript)
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
+- [vim-signature](https://github.com/kshenoy/vim-signature)
