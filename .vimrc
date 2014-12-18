@@ -87,3 +87,6 @@ let g:syntastic_javascript_checkers=["eslint"]
 
 " vim-javascript
 let javascript_enable_domhtmlcss=1
+
+" vim-markdown
+let g:vim_markdown_folding_disabled=1

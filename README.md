@@ -8,6 +8,7 @@ This where I store my rc files for vim, bash, zsh, etc.
 - [Solarized](https://github.com/altercation/vim-colors-solarized), currently used
 - [BusyBee](http://www.vim.org/scripts/script.php?script_id=2549)
 
+
 ### Plugins
 - [Pathogen](https://github.com/tpope/vim-pathogen)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
@@ -19,3 +20,4 @@ This where I store my rc files for vim, bash, zsh, etc.
 - [vim-javascript](https://github.com/pangloss/vim-javascript)
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [vim-signature](https://github.com/kshenoy/vim-signature)
+- [vim-markdown](https://github.com/plasticboy/vim-markdown)
