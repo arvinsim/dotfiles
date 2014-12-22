@@ -1,12 +1,20 @@
 #RC files
 
-This where I store my rc files for vim, bash, zsh, etc.
+This where I store my rc files for vim, eslint, etc.
+
+## eslint
+
++ .eslintc
 
 ## Vim
+
++ .vimrc
++ .gvimrc
 
 ### Themes
 + [Solarized](https://github.com/altercation/vim-colors-solarized), currently used
 + [BusyBee](http://www.vim.org/scripts/script.php?script_id=2549)
+
 
 ### Plugins
 + [Pathogen](https://github.com/tpope/vim-pathogen)

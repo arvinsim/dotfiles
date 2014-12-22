@@ -82,8 +82,11 @@ let g:hardtime_maxcount=2
 let g:syntastic_check_on_wq=0
 let g:syntastic_enable_highlighting=1
 let g:syntastic_enable_signs=1
-" let g:syntastic_javascript_checkers=["gjslint"]
 let g:syntastic_javascript_checkers=["eslint"]
+let b:syntastic_skip_checks=0
 
 " vim-javascript
 let javascript_enable_domhtmlcss=1
+
+" vim-markdown
+let g:vim_markdown_folding_disabled=1
