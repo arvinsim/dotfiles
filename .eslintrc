@@ -10,7 +10,7 @@
         "amplify": true
     },
     "rules": {
-        "valid-jsdoc": 2,
+        "valid-jsdoc": [2, { "requireReturn": false}],
         "no-else-return": 2,
         "no-eq-null": 2,
         "no-floating-decimal": 2,
