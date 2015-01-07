@@ -82,8 +82,13 @@ let g:hardtime_maxcount=2
 let g:syntastic_check_on_wq=0
 let g:syntastic_enable_highlighting=1
 let g:syntastic_enable_signs=1
-let g:syntastic_javascript_checkers=["eslint"]
+let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['js'] }
+let g:syntastic_javascript_checkers=['eslint']
 let b:syntastic_skip_checks=0
+let g:syntastic_warning_symbol='WW'
+let g:syntastic_error_symbol='EE'
+let g:syntastic_style_warning_symbol='SW'
+let g:syntastic_style_error_symbol='SE'
 
 " vim-javascript
 let javascript_enable_domhtmlcss=1
