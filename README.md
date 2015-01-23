@@ -17,6 +17,8 @@ This where I store my rc files for vim, eslint, etc.
 
 
 ### Plugins
+
+#### General
 + [Pathogen](https://github.com/tpope/vim-pathogen)
 + [NERDTree](https://github.com/scrooloose/nerdtree)
 + [vim-airline](https://github.com/bling/vim-airline)
@@ -24,7 +26,14 @@ This where I store my rc files for vim, eslint, etc.
 + [CtrlP](kien.github.io/ctrlp.vim)
 + [vim-hardtime](https://github.com/takac/vim-hardtime)
 + [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
-+ [vim-javascript](https://github.com/pangloss/vim-javascript)
 + [vim-fugitive](https://github.com/tpope/vim-fugitive)
 + [vim-signature](https://github.com/kshenoy/vim-signature)
+
+#### Markdown
 + [vim-markdown](https://github.com/plasticboy/vim-markdown)
+
+#### Javascript
++ [vim-javascript](https://github.com/pangloss/vim-javascript)
+
+#### Python
++ [python-mode](https://github.com/klen/python-mode)
