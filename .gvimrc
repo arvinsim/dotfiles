@@ -22,5 +22,3 @@ elseif os == 'windows32'
 elseif os == 'Darwin'
     set guifont=Monaco:h12
 endif
-
-
