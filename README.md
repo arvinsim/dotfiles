@@ -32,6 +32,11 @@ This where I store my rc files for vim, eslint, etc.
 + [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
 + [vim-fugitive](https://github.com/tpope/vim-fugitive)
 + [vim-signature](https://github.com/kshenoy/vim-signature)
++ [csapprox](https://github.com/godlygeek/csapprox)
+
+#### LESS
+
++ [vim-less](https://github.com/groenewege/vim-less)
 
 #### Markdown
 + [vim-markdown](https://github.com/plasticboy/vim-markdown)
