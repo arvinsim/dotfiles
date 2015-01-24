@@ -1,3 +1,6 @@
+# Set terminal to 256 colors
+export TERM=xterm-256color
+
 # Set the PS1 prompt (with colors).
 export txt_green='\e[01;32m' # foreground green
 export txt_light_cyan='\e[0;96m' # foreground light cyan

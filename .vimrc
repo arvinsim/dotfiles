@@ -5,6 +5,7 @@ let os=substitute(system('uname'), '\n', '', '')
 set nocompatible " explicitly get out of vi-compatible mode
 syntax on " syntax highlighting on
 
+
 " General
 filetype plugin indent on " load filetype plugins/indent settings
 set backspace=indent,eol,start " make backspace more flexible
@@ -45,6 +46,8 @@ nnoremap k gk
 " Set encoding to UTF 8
 scriptencoding utf-8
 set encoding=utf-8
+
+
 "===============PLUGINS================
 "Pathogen
 filetype off
@@ -92,5 +95,9 @@ let g:syntastic_style_error_symbol='SE'
 " vim-javascript
 let javascript_enable_domhtmlcss=1
 
-" vim-markdown
-let g:vim_markdown_folding_disabled=1
+"=================THEME================
+" Solarized(Dark)
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
