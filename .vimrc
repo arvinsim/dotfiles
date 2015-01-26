@@ -95,6 +95,15 @@ let g:syntastic_style_error_symbol='SE'
 " vim-javascript
 let javascript_enable_domhtmlcss=1
 
+" pymode
+let g:pymode=1
+let g:pymode_virtualenv=1
+let g:pymode_lint=1
+let g:pymode_lint_on_write=1
+let g:pymode_lint_message=1
+let g:pymode_lint_checkers=['pep8']
+let g:pymode_lint_signs=1
+
 "=================THEME================
 " Solarized(Dark)
 syntax enable
