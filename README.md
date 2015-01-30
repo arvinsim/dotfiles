@@ -33,6 +33,7 @@ This where I store my rc files for vim, eslint, etc.
 + [vim-fugitive](https://github.com/tpope/vim-fugitive)
 + [vim-signature](https://github.com/kshenoy/vim-signature)
 + [csapprox](https://github.com/godlygeek/csapprox)
++ [vitality](https://github.com/sjl/vitality.vim)
 
 #### LESS
 

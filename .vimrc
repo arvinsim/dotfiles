@@ -102,6 +102,7 @@ let g:pymode_lint=1
 let g:pymode_lint_on_write=1
 let g:pymode_lint_message=1
 let g:pymode_lint_checkers=['pep8']
+let g:pymode_lint_cwindow=1
 let g:pymode_lint_signs=1
 
 "=================THEME================
