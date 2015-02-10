@@ -85,12 +85,13 @@ let g:hardtime_maxcount=2
 let g:syntastic_check_on_wq=0
 let g:syntastic_enable_highlighting=1
 let g:syntastic_enable_signs=1
-let g:syntastic_mode_map={ 'mode': 'passive', 'active_filetypes': [], 'passive_filetypes': ['js'] }
+let g:syntastic_mode_map={ 'mode': 'passive', 'active_filetypes': [], 'passive_filetypes': ['py', 'js'] }
 let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_warning_symbol='WW'
 let g:syntastic_error_symbol='EE'
 let g:syntastic_style_warning_symbol='SW'
 let g:syntastic_style_error_symbol='SE'
+let g:syntastic_ignore_files = ['\.py$']
 
 " vim-javascript
 let javascript_enable_domhtmlcss=1
@@ -104,6 +105,12 @@ let g:pymode_lint_message=1
 let g:pymode_lint_checkers=['pep8']
 let g:pymode_lint_cwindow=1
 let g:pymode_lint_signs=1
+let g:pymode_breakpoint=1
+let g:pymode_breakpoint_bind='<leader>b'
+let g:pymode_breakpoint_cmd='import pudb; pudb.set_trace()'
+let g:pymode_rope=1
+let g:pymode_syntax=1
+let g:pymode_syntax_all=1
 
 "=================THEME================
 " Solarized(Dark)
