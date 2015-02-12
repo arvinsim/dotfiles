@@ -34,6 +34,7 @@ This where I store my rc files for vim, eslint, etc.
 + [vim-signature](https://github.com/kshenoy/vim-signature)
 + [csapprox](https://github.com/godlygeek/csapprox)
 + [vitality](https://github.com/sjl/vitality.vim)
++ [Tagbar](https://github.com/majutsushi/tagbar)
 
 #### LESS
 
@@ -44,6 +45,7 @@ This where I store my rc files for vim, eslint, etc.
 
 #### Javascript
 + [vim-javascript](https://github.com/pangloss/vim-javascript)
++ [tern_for_vim](https://github.com/marijnh/tern_for_vim) 
 
 #### Python
 + [python-mode](https://github.com/klen/python-mode)
