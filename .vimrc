@@ -113,8 +113,8 @@ let g:pymode_syntax=1
 let g:pymode_syntax_all=1
 
 " tagbar
-"let g:tagbar_ctags_bin='/usr/local/bin/ctags' " Proper Ctags locations
-"nmap <F8> :TagbarToggle<CR>                  
+let g:tagbar_ctags_bin='/usr/local/bin/ctags' " Proper Ctags locations
+nmap <F8> :TagbarToggle<CR>                  
 
 "=================THEME================
 " Solarized(Dark)
