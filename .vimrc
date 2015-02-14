@@ -62,7 +62,8 @@ let NERDTreeMouseMode=2 " Single click to open directory, double click to open f
 let NERDTreeShowHidden=1 " Show hidden files
 let NERDTreeShowLineNumbers=1 " Display line numbers in tree window
 let g:NERDTreeDirArrows=1 " Use arrows for directory
-
+nmap <F2> :NERDTreeToggle<cr>
+"
 " Ctrlp
 let g:ctrlp_show_hidden = 1
 "begin finding a root from the current working directory outside of CtrlP
@@ -115,6 +116,10 @@ let g:pymode_syntax_all=1
 " tagbar
 let g:tagbar_ctags_bin='/usr/local/bin/ctags' " Proper Ctags locations
 nmap <F8> :TagbarToggle<CR>                  
+
+" emmet
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 "=================THEME================
 " Solarized(Dark)
