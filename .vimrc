@@ -9,7 +9,7 @@ syntax on " syntax highlighting on
 " General
 filetype plugin indent on " load filetype plugins/indent settings
 set backspace=indent,eol,start " make backspace more flexible
-set clipboard+=unnamed " share windows clipboard
+set clipboard=unnamedplus " share windows clipboard
 set ignorecase  " ignore case when searching
 set smartcase   " only apply case sensitive search if at least one of the letters in the pattern is uppercase
 set wrapscan    " wrap around
