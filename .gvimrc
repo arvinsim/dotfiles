@@ -16,7 +16,7 @@ set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
 
 if os == 'Linux'
-    set guifont=Monospace\ 10
+    set guifont=Monospace\ 9
 elseif os == 'windows32'
     set guifont=Consolas:h11:cDEFAULT
 elseif os == 'Darwin'

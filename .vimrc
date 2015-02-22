@@ -47,6 +47,8 @@ nnoremap k gk
 scriptencoding utf-8
 set encoding=utf-8
 
+"===============AUTOCMD================
+autocmd Filetype ace setlocal expandtab shiftwidth=2 softtabstop=2
 
 "===============PLUGINS================
 "Pathogen
