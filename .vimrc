@@ -9,7 +9,11 @@ syntax on " syntax highlighting on
 " General
 filetype plugin indent on " load filetype plugins/indent settings
 set backspace=indent,eol,start " make backspace more flexible
-set clipboard=unnamedplus " share windows clipboard
+if os == 'Linux'
+    set clipboard=unnamedplus,autoselect " share windows clipboard
+elseif os == 'Darwin'
+    set clipboard=unnamed,autoselect " share windows clipboard
+endif
 set ignorecase  " ignore case when searching
 set smartcase   " only apply case sensitive search if at least one of the letters in the pattern is uppercase
 set wrapscan    " wrap around
@@ -121,7 +125,7 @@ nmap <F8> :TagbarToggle<CR>
 
 " emmet
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,css " EmmetInstall
 
 "=================THEME================
 " Solarized(Dark)
