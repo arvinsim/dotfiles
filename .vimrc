@@ -124,8 +124,10 @@ let g:tagbar_ctags_bin='/usr/local/bin/ctags' " Proper Ctags locations
 nmap <F8> :TagbarToggle<CR>                  
 
 " emmet
-let g:user_emmet_install_global = 0
+let g:user_emmet_install_global=0
 autocmd FileType html,css " EmmetInstall
+" youcompleteme
+let g:ycm_auto_trigger=1
 
 "=================THEME================
 " Solarized(Dark)
