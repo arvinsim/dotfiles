@@ -75,6 +75,11 @@ let g:ctrlp_show_hidden = 1
 "begin finding a root from the current working directory outside of CtrlP
 " instead of from the directory of the current file (default)
 let g:ctrlp_working_path_mode='rw' 
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)|(node_modules)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
 if os == 'Linux'
     set runtimepath^=~/.vim/bundle/ctrlp.vim
