@@ -21,5 +21,5 @@ if os == 'Linux'
 elseif os == 'windows32'
     set guifont=Consolas:h11:cDEFAULT
 elseif os == 'Darwin'
-    set guifont=Monaco:h10
+    set guifont=Monaco:h12
 endif
