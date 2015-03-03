@@ -91,7 +91,7 @@ endif
 " vim-hardtime
 let g:hardtime_default_on=1
 " lets you press n times before hardtime ignores subsequent keypress
-let g:hardtime_maxcount=2  
+let g:hardtime_maxcount=3  
 
 " syntastic
 let g:syntastic_check_on_wq=0
@@ -104,9 +104,6 @@ let g:syntastic_error_symbol='EE'
 let g:syntastic_style_warning_symbol='SW'
 let g:syntastic_style_error_symbol='SE'
 let g:syntastic_ignore_files = ['\.py$']
-
-" vim-javascript
-let javascript_enable_domhtmlcss=1
 
 " pymode
 let g:pymode=1
@@ -127,12 +124,6 @@ let g:pymode_syntax_all=1
 " tagbar
 let g:tagbar_ctags_bin='/usr/local/bin/ctags' " Proper Ctags locations
 nmap <F8> :TagbarToggle<CR>                  
-
-" emmet
-let g:user_emmet_install_global=0
-autocmd FileType html,css " EmmetInstall
-" youcompleteme
-let g:ycm_auto_trigger=1
 
 "=================THEME================
 " Solarized(Dark)
