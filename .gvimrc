@@ -1,4 +1,4 @@
-" Startup
+"http://www.scifiwright.com/ Startup
 let os=substitute(system('uname'), '\n', '', '')
 " ===============Themes========================= 
 
@@ -18,7 +18,8 @@ set antialias
 
 if os == 'Linux'
     "set guifont=Monospace\ 9
-    set guifont=Ubuntu\ Mono\ 12
+    "set guifont=Ubuntu\ Mono\ 12
+    set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
 elseif os == 'windows32'
     set guifont=Consolas:h11:cDEFAULT
 elseif os == 'Darwin'
