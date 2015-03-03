@@ -14,6 +14,7 @@ colorscheme solarized
 set enc=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
+set antialias
 
 if os == 'Linux'
     "set guifont=Monospace\ 9
@@ -21,5 +22,6 @@ if os == 'Linux'
 elseif os == 'windows32'
     set guifont=Consolas:h11:cDEFAULT
 elseif os == 'Darwin'
-    set guifont=Monaco:h12
+    "set guifont=Monaco:h12
+    set guifont=Inconsolata-g\ for\ Powerline:h12
 endif

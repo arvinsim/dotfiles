@@ -125,6 +125,11 @@ let g:pymode_syntax_all=1
 let g:tagbar_ctags_bin='/usr/local/bin/ctags' " Proper Ctags locations
 nmap <F8> :TagbarToggle<CR>                  
 
+" airline
+if has('gui_running')
+    let g:airline_powerline_fonts=1
+endif
+
 "=================THEME================
 " Solarized(Dark)
 syntax enable
