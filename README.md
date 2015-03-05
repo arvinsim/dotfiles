@@ -1,6 +1,6 @@
 #Dotfile
 
-Dotifiles vim, eslint, git, etc
+Dotfiles vim, eslint, git, etc
 
 ## bash
 
