@@ -25,5 +25,5 @@ if [[ $platform == 'linux' ]]; then
     GIT_PS1_SHOWCOLORHINTS=1
     export PS1="${txt_light_cyan}\u ${color_off}at ${txt_light_cyan}\h ${color_off}in ${txt_green}\W ${color_off}on $(__git_ps1 "%s") ${txt_purple}$ ${color_off}"
 elif [[ $platform == 'MacOSX' ]]; then
-    export PS1="[${txt_blue}\u@\h:${txt_green}\w]${color_off}:"
+    export PS1="[${txt_blue}\u@\h:${txt_green}\w${color_off}]:"
 fi

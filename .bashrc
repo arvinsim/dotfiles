@@ -2,7 +2,7 @@
 export TERM=xterm-256color
 
 # Set the bash prompt
-source ~/.bash_prompt
+source ~/.bash_profile
 
 # Set default editor to vim
 export EDITOR=vim
