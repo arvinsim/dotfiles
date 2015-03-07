@@ -53,7 +53,8 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 "===============AUTOCMD================
-autocmd Filetype ace setlocal expandtab shiftwidth=2 softtabstop=2
+au BufRead,BufNewFile *.ace set filetype=ace
+autocmd FileType ace setlocal expandtab shiftwidth=2 softtabstop=2
 
 "===============PLUGINS================
 "Pathogen
@@ -136,4 +137,4 @@ endif
 syntax enable
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme solarized 
