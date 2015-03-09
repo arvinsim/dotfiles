@@ -52,8 +52,10 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 "===============AUTOCMD================
-autocmd!	" Remove ALL autocommands for the current group.
-autocmd Filetype ace setlocal expandtab shiftwidth=2 softtabstop=2
+if !exists("autocommands_loaded") " Ensure that we only load autocmds once
+    let autocommands_loaded = 1
+    autocmd Filetype ace setlocal expandtab shiftwidth=2 softtabstop=2
+endif
 
 "===============PLUGINS================
 "Pathogen
