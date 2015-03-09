@@ -54,7 +54,10 @@ set fileencoding=utf-8
 "===============AUTOCMD================
 if !exists("autocommands_loaded") " Ensure that we only load autocmds once
     let autocommands_loaded = 1
-    autocmd Filetype ace setlocal expandtab shiftwidth=2 softtabstop=2
+
+    " Change some shiftwidth and tabstops on ACE template files
+    au BufRead,BufNewFile *.ace set filetype=ace
+    autocmd FileType ace setlocal expandtab shiftwidth=2 softtabstop=2
 endif
 
 "===============PLUGINS================
@@ -138,4 +141,4 @@ endif
 syntax enable
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme solarized 
