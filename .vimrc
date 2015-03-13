@@ -60,6 +60,9 @@ if !exists("autocommands_loaded") " Ensure that we only load autocmds once
     autocmd FileType ace setlocal expandtab shiftwidth=2 softtabstop=2
 endif
 
+" Set line wrap for markdown files
+autocmd BufNewFile,BufRead *.md set wrap
+
 "===============PLUGINS================
 "Pathogen
 filetype off
