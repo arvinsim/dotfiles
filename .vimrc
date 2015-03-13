@@ -5,7 +5,6 @@ let os=substitute(system('uname'), '\n', '', '')
 set nocompatible " explicitly get out of vi-compatible mode
 syntax on " syntax highlighting on
 
-
 " General
 filetype plugin indent on " load filetype plugins/indent settings
 set backspace=indent,eol,start " make backspace more flexible
@@ -53,8 +52,13 @@ set encoding=utf-8
 set fileencoding=utf-8
 
 "===============AUTOCMD================
-au BufRead,BufNewFile *.ace set filetype=ace
-autocmd FileType ace setlocal expandtab shiftwidth=2 softtabstop=2
+if !exists("autocommands_loaded") " Ensure that we only load autocmds once
+    let autocommands_loaded = 1
+
+    " Change some shiftwidth and tabstops on ACE template files
+    au BufRead,BufNewFile *.ace set filetype=ace
+    autocmd FileType ace setlocal expandtab shiftwidth=2 softtabstop=2
+endif
 
 "===============PLUGINS================
 "Pathogen
