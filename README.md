@@ -38,5 +38,8 @@ Dotfiles vim, eslint, git, etc
 #### Javascript
 + [tern_for_vim](https://github.com/marijnh/tern_for_vim) 
 
+#### JSX
++ [vim-jsx](https://github.com/mxw/vim-jsx)
+
 #### Python
 + [python-mode](https://github.com/klen/python-mode)

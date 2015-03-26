@@ -135,9 +135,11 @@ let g:tagbar_ctags_bin='/usr/local/bin/ctags' " Proper Ctags locations
 nmap <F8> :TagbarToggle<CR>                  
 
 " airline
-if has('gui_running')
-    let g:airline_powerline_fonts=1
-endif
+let g:airline_powerline_fonts=1
+let g:airline#extensions#default#section_truncate_width = { 'b': 79, 'x': 60, 'y': 88, 'z': 45 }
+
+" jsx
+let g:jsx_ext_required = 0
 
 "=================THEME================
 " Solarized(Dark)
