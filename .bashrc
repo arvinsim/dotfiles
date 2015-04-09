@@ -8,6 +8,8 @@ source ~/.bash_profile
 export EDITOR=vim
 
 export PATH="/usr/local/bin:$PATH"
+export PATH="~/bin:$PATH"
+
 
 # Python - mkvirtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
@@ -19,8 +21,5 @@ export PATH=~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:$PATH
 
 # Racket
 export PATH=~/racket/bin:$PATH
-
-# Go
-export PATH=$PATH:~/bin/go
 
 source ~/Code/installation/liquidprompt/liquidprompt
