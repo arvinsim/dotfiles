@@ -21,6 +21,7 @@
         "no-undefined": 2,
         "func-names": 2,
         "quotes": [1, "double", "avoid-escape"],
-        "no-irregular-whitespace":  0
+        "no-irregular-whitespace":  0,
+        "camelcase": [2, {"properties": "never"}]
     }
 }
