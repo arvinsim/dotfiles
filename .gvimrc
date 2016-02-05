@@ -1,5 +1,6 @@
-"http://www.scifiwright.com/ Startup
+" Startup
 let os=substitute(system('uname'), '\n', '', '')
+
 " ===============Themes========================= 
 
 " BusyBee
@@ -34,7 +35,7 @@ elseif os == 'windows32'
     nnoremap <C-n> :silent execute '!start gvim'<CR>
 elseif os == 'Darwin'
     "set guifont=Monaco:h12
-    set guifont=Inconsolata-g\ for\ Powerline:h12
+    set guifont=Inconsolata-g\ for\ Powerline:h14
    
     "===========MAPS===================
     " Just use Command + N to launch new MVIM window
