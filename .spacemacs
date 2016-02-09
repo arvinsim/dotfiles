@@ -245,8 +245,9 @@ in `dotspacemacs/user-config'."
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
   (global-linum-mode)
-  (evil-leader/set-key "o a" 'org-agenda)
-  (evil-leader/set-key "SPC" 'avy-goto-char)
+  (spacemacs/set-leader-keys "o a" 'org-agenda)
+  (spacemacs/set-leader-keys "o s" 'org-schedule)
+  (spacemacs/set-leader-keys "SPC" 'avy-goto-char-timer)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
