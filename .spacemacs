@@ -246,6 +246,8 @@ in `dotspacemacs/user-config'."
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
   (global-linum-mode)
+  (custom-set-variables
+   '(markdown-command "/usr/local/bin/pandoc"))
   (spacemacs/set-leader-keys "o a" 'org-agenda)
   (spacemacs/set-leader-keys "o s" 'org-schedule)
   (spacemacs/set-leader-keys "SPC" 'avy-goto-char-timer)
