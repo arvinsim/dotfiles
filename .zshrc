@@ -21,3 +21,7 @@ export PATH=/Users/arvinsim/anaconda/bin:$PATH
 # Emacs24 (Override vanilla Emacs because I don't want to use it!)
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias spacemacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
+
+# Set editor to Vim
+export EDITOR=vim
+export VISUAL=vim
