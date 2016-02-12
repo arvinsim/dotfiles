@@ -27,16 +27,15 @@ values."
      ;; better-defaults
      ;; emacs-lisp
      git
-     markdown
+     ;; markdown
      org
-     python
-     ;; (shell :variables
+     ;; python
      (shell :variables
              shell-default-term-shell "/bin/zsh"
              shell-default-height 30
              shell-default-position 'bottom)
      ;; spell-checking
-     syntax-checking
+     ;; syntax-checking
      ;; version-control
      )
    ;; List of additional packages that will be installed without being
