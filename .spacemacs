@@ -29,7 +29,7 @@ values."
      git
      ;; markdown
      org
-     ;; python
+     python
      (shell :variables
              shell-default-term-shell "/bin/zsh"
              shell-default-height 30
@@ -246,12 +246,23 @@ in `dotspacemacs/user-config'."
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
+
+  ;; Show Line Numbers
   (global-linum-mode)
-  (custom-set-variables
-   '(markdown-command "/usr/local/bin/pandoc"))
-  (spacemacs/set-leader-keys "o a" 'org-agenda)
-  (spacemacs/set-leader-keys "o s" 'org-schedule)
+
+  ;; Set custom TODO keywords
+  (setq org-todo-keywords
+        '((sequence "TODO" "IN-PROGRESS" "WAITING" "|" "DONE" "DELEGATED" "DROPPED")))
+
+  ;; Set the default file to capture notes
+  (setq org-default-notes-file (expand-file-name "~/Dropbox/org/notes.org"))
+
+  ;; Replace the default avy search
   (spacemacs/set-leader-keys "SPC" 'avy-goto-char-timer)
+
+  ;; Show headings for all agenda files when doing org-refile
+  (setq org-refile-targets
+        '((org-agenda-files . (:maxlevel . 6))))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
