@@ -1,30 +1,40 @@
-#Dotfile
+* Dotfile
 
-Dotfiles vim, eslint, git, etc
+Dotfiles for vim, spacemacs, zsh, bash, etc
 
-## bash
+** bash
 
 + .bashrc
++ .bash_aliases
++ .bash_profile
 
-## eslint
+** zsh + prezto
+
++ .zlogin
++ .zlogout
++ .zpreztorc
++ .zprofile
++ .zshenv
++ .zshrc
+
+** eslint
 
 + .eslintc
 
-## Vim
+** Vim
 
 + .vimrc
 + .gvimrc
 
-### Themes
+*** Themes
 + [Solarized](https://github.com/altercation/vim-colors-solarized), currently used
 
-### Plugins
+*** Plugins
 
-#### General
+**** General
 + [Pathogen](https://github.com/tpope/vim-pathogen)
-
 + [csapprox](https://github.com/godlygeek/csapprox)
-+ [CtrlP](kien.github.io/ctrlp.vim)
++ [CtrlP](https://kien.github.io/ctrlp.vim)
 + [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
 + [NERDTree](https://github.com/scrooloose/nerdtree)
 + [vim-airline](https://github.com/bling/vim-airline)
@@ -35,11 +45,11 @@ Dotfiles vim, eslint, git, etc
 + [vim-surround](https://github.com/tpope/vim-surround)
 + [Tagbar](https://github.com/majutsushi/tagbar)
 
-#### Javascript
+**** Javascript
 + [tern_for_vim](https://github.com/marijnh/tern_for_vim) 
 
-#### JSX
+**** JSX
 + [vim-jsx](https://github.com/mxw/vim-jsx)
 
-#### Python
+**** Python
 + [python-mode](https://github.com/klen/python-mode)
