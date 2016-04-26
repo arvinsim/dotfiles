@@ -19,13 +19,14 @@ set wrapscan    " wrap around
 set nobackup    " disable backup files    
 set nowritebackup   " don't make a backup before overwriting
 set noswapfile  " disable swap files
+let mapleader="\<Space>"
 
 " VIM UI
 set incsearch   "search as characters are entered
 set laststatus=2 "always show the status line
 set number	"show line numbers
 set numberwidth=5   " width of number column
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR> " Press Space to turn off highlighting and clear any message already displayed
+"nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR> " Press Space to turn off highlighting and clear any message already displayed
 set hlsearch    "highlight matches
 set showcmd "show command in bottom bar
 set showmatch   "highlight matching [{()}]
@@ -78,7 +79,7 @@ let NERDTreeShowHidden=1 " Show hidden files
 let NERDTreeShowLineNumbers=1 " Display line numbers in tree window
 let g:NERDTreeDirArrows=1 " Use arrows for directory
 nmap <F2> :NERDTreeToggle<cr>
-"
+
 " Ctrlp
 let g:ctrlp_show_hidden = 1
 "begin finding a root from the current working directory outside of CtrlP
@@ -98,41 +99,41 @@ elseif os == 'Darwin'
 endif
 
 " vim-hardtime
-let g:hardtime_default_on=1
+"let g:hardtime_default_on=1
 " lets you press n times before hardtime ignores subsequent keypress
-let g:hardtime_maxcount=3  
+"let g:hardtime_maxcount=3  
 
 " syntastic
-let g:syntastic_check_on_wq=0
-let g:syntastic_enable_highlighting=1
-let g:syntastic_enable_signs=1
-let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': ['js'], 'passive_filetypes': ['py'] }
-let g:syntastic_javascript_checkers=['eslint']
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_error_symbol='✗'
-let g:syntastic_style_warning_symbol='W'
-let g:syntastic_style_error_symbol='E'
-let g:syntastic_ignore_files = ['\.py$']
+"let g:syntastic_check_on_wq=0
+"let g:syntastic_enable_highlighting=1
+"let g:syntastic_enable_signs=1
+"let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': ['js'], 'passive_filetypes': ['py'] }
+"let g:syntastic_javascript_checkers=['eslint']
+"let g:syntastic_warning_symbol='⚠'
+"let g:syntastic_error_symbol='✗'
+"let g:syntastic_style_warning_symbol='W'
+"let g:syntastic_style_error_symbol='E'
+"let g:syntastic_ignore_files = ['\.py$']
 
 " pymode
-let g:pymode=1
-let g:pymode_virtualenv=1
-let g:pymode_lint=1
-let g:pymode_lint_on_write=1
-let g:pymode_lint_message=1
-let g:pymode_lint_checkers=['pep8']
-let g:pymode_lint_cwindow=1
-let g:pymode_lint_signs=1
-let g:pymode_breakpoint=1
-let g:pymode_breakpoint_bind='<leader>b'
-let g:pymode_breakpoint_cmd='import pudb; pudb.set_trace()'
-let g:pymode_rope=1
-let g:pymode_syntax=1
-let g:pymode_syntax_all=1
+"let g:pymode=1
+"let g:pymode_virtualenv=1
+"let g:pymode_lint=1
+"let g:pymode_lint_on_write=1
+"let g:pymode_lint_message=1
+"let g:pymode_lint_checkers=['pep8']
+"let g:pymode_lint_cwindow=1
+"let g:pymode_lint_signs=1
+"let g:pymode_breakpoint=1
+"let g:pymode_breakpoint_bind='<leader>b'
+"let g:pymode_breakpoint_cmd='import pudb; pudb.set_trace()'
+"let g:pymode_rope=1
+"let g:pymode_syntax=1
+"let g:pymode_syntax_all=1
 
 " tagbar
-let g:tagbar_ctags_bin='/usr/local/bin/ctags' " Proper Ctags locations
-nmap <F8> :TagbarToggle<CR>                  
+" let g:tagbar_ctags_bin='/usr/local/bin/ctags' " Proper Ctags locations
+" nmap <F8> :TagbarToggle<CR>                  
 
 " airline
 let g:airline_powerline_fonts=1
@@ -140,6 +141,20 @@ let g:airline#extensions#default#section_truncate_width = { 'b': 79, 'x': 60, 'y
 
 " jsx
 let g:jsx_ext_required = 0
+
+" Easymotion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Bi-directional find motion
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap <Leader>f <Plug>(easymotion-s)
+
+" Move to line
+nmap <Leader>l <Plug>(easymotion-bd-jk)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
 
 "=================THEME================
 " Solarized(Dark)
