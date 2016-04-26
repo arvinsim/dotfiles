@@ -53,3 +53,8 @@ Dotfiles for vim, spacemacs, zsh, bash, etc
 
 **** Python
 + [[https://github.com/klen/python-mode][python-mode]]
+
+** Installation
+
+- Make sure that you have Python installed
+- Run setup.py to create symbolic links
