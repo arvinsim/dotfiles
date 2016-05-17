@@ -7,6 +7,8 @@ home = expanduser("~")
 if platform.system() != 'Darwin' and platform.system() != 'Linux':
     exit()
 
+print('Setup start...')
+
 # Create Symlinks for the rc files
 rc_files = ['.eslintrc', '.gvimrc', '.vimrc', '.zlogin', '.zlogout',
             '.zpreztorc', '.zprofile', '.zshenv', '.zshrc']
@@ -17,3 +19,5 @@ for rc_file in rc_files:
     if os.path.isfile(source) and not os.path.isfile(destination):
         os.symlink(source, destination)
         print(source + ' is created.')
+
+print('Setup done!')
