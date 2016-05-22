@@ -11,7 +11,7 @@ print('Setup start...')
 
 # Create Symlinks for the rc files
 rc_files = ['.eslintrc', '.gvimrc', '.vimrc', '.zlogin', '.zlogout',
-            '.zpreztorc', '.zprofile', '.zshenv', '.zshrc']
+            '.zpreztorc', '.zprofile', '.zshenv', '.zshrc', '.ideavimrc']
 
 for rc_file in rc_files:
     source = os.path.join(os.getcwd(), rc_file)
