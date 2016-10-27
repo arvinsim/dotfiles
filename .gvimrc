@@ -34,8 +34,8 @@ elseif os == 'windows32'
     " Launch new gvim window instance
     nnoremap <C-n> :silent execute '!start gvim'<CR>
 elseif os == 'Darwin'
-    "set guifont=Monaco:h12
-    set guifont=Inconsolata-g\ for\ Powerline:h14
+    set guifont=Monaco:h12
+    "set guifont=Inconsolata-g\ for\ Powerline:h20
    
     "===========MAPS===================
     " Just use Command + N to launch new MVIM window
